@@ -28,4 +28,5 @@ files = os.listdir(path)
 for file in files:
     if file.endswith('.txt') and 'translated' not in file:
         translation = translateFile(file)
+        print(translation)
         writeToFile(file, translation.text)
